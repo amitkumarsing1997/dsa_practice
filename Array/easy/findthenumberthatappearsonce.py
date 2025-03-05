@@ -1,37 +1,37 @@
 
 # approach 1) Brute force appraoch
 
-# def getSingleElement(arr):
-#     # Size of the array:
-#     n = len(arr)
+def getSingleElement(arr):
+    # Size of the array:
+    n = len(arr)
 
-#     # Run a loop for selecting elements:
-#     for i in range(n):
-#         num = arr[i]  # selected element
-#         cnt = 0
+    # Run a loop for selecting elements:
+    for i in range(n):
+        num = arr[i]  # selected element
+        cnt = 0
 
-#         # Find the occurrence using linear search:
-#         for j in range(n):
-#             if arr[j] == num:
-#                 cnt += 1
+        # Find the occurrence using linear search:
+        for j in range(n):
+            if arr[j] == num:
+                cnt += 1
 
-#         # If the occurrence is 1, return the number:
-#         if cnt == 1:
-#             return num
+        # If the occurrence is 1, return the number:
+        if cnt == 1:
+            return num
 
-#     # This line will never execute
-#     # if the array contains a single element.
-#     return -1
-
-
-# def main():
-#     arr = [4, 1, 2, 1, 2]
-#     ans = getSingleElement(arr)
-#     print("The single element is:", ans)
+    # This line will never execute
+    # if the array contains a single element.
+    return -1
 
 
-# if __name__ == '__main__':
-#     main()
+def main():
+    arr = [4, 4,1,3, 2, 1, 2]
+    ans = getSingleElement(arr)
+    print("The single element is:", ans)
+
+
+if __name__ == '__main__':
+    main()
 
 
 # Time Complexity: O(N2), where N = size of the given array.
@@ -123,16 +123,16 @@
 
 # Approach -4  (Optimal approach)
 
-def getSingleElement(arr):
-    # XOR all the elements
-    xorr = 0
-    for num in arr:
-        xorr = xorr ^ num
-    return xorr
+# def getSingleElement(arr):
+#     # XOR all the elements
+#     xorr = 0
+#     for num in arr:
+#         xorr = xorr ^ num
+#     return xorr
 
-arr = [5,1,2,1,2]
-ans = getSingleElement(arr)
-print("The single element is: ",ans)
+# arr = [5,1,2,1,2]
+# ans = getSingleElement(arr)
+# print("The single element is: ",ans)
     
  
     
