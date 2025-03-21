@@ -8,7 +8,8 @@ final ans = 3
 
 def countofsubsetsum(arr, sum):
     n = len(arr)
-    t = [ [-1] * (sum + 1) for i in range(0, n+1)]
+    # t = [ [-1] * (sum + 1) for i in range(0, n+1)]
+    t = [[0 for _ in range(sum + 1)] for _ in range(n + 1)]
     for i in range(0, n + 1):
         for j in range(0, sum + 1):
             if i == 0:
