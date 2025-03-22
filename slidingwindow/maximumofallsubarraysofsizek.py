@@ -1,4 +1,26 @@
+# Q = (1) max sum of subarray of size k
 
+"""
+Note - How to identify it is the question of sliding window so basically question will be
+either array or substring and in this it is asked subarray or substring or we have given window size
+or condition(variable size window case) and according to that condition we will return max or minimum
+
+
+
+problem statement ;
+size = 7
+arr = [2,5,1,8,2,9,1]
+window size k = 3
+find max sum of in window size k = 3
+(1) => 2+5+1 = 8
+(2) => 5+1+8 = 14
+(3) => 1+8+2 = 11
+(4) => 8+2+9 = 19
+(5) => 2+9+1 = 12
+(6) => 9+1+2 = 12
+
+
+"""
 # brute force approach
 # def sliding_window(arr,k):
 #     ans = []
